@@ -35,7 +35,6 @@ function buildFilterString(filterObject?: Record<string, string>): string | null
 }
 
 // --- Zod Schemas for Tool Arguments ---
-
 const odataQuerySchema = z.object({
     entity: z.string().describe("The OData entity set to query (e.g., CustomersV3, ReleasedProductsV2)."),
     select: z.string().optional().describe("OData $select query parameter to limit the fields returned."),
